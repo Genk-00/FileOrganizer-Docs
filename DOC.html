@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>File Organizer v1.0.2 - User Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 24px; line-height: 1.6; color: #333; max-width: 800px; margin-left: auto; margin-right: auto; }
+        h1 { font-size: 2.2rem; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { font-size: 1.5rem; margin-top: 36px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        h3 { font-size: 1.2rem; margin-top: 28px; }
+        pre, code { background: #f6f8fa; padding: 2px 5px; border-radius: 6px; font-family: "Courier New", Courier, monospace; }
+        pre { padding: 12px; overflow-x: auto; }
+        table { border-collapse: collapse; width: 100%; margin-top: 16px; }
+        td, th { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background: #f9f9f9; }
+        .callout { background: #fffbe6; padding: 12px 16px; border-left: 5px solid #ffcc00; border-radius: 4px; margin-top: 16px; }
+        .pro-feature { 
+            background: #e6f7ff; 
+            border: 1px solid #b3e0ff; 
+            padding: 1px 5px; 
+            border-radius: 4px; 
+            font-size: 0.85em; 
+            font-weight: bold; 
+            color: #0056b3;
+            margin-left: 5px;
+        }
+        ul li { margin-bottom: 8px; }
+
+        /* --- STYLES FOR THE TRANSLATOR --- */
+        #translator-container { margin-top: 10px; margin-bottom: 15px; }
+        #google_translate_element { display: inline-block; }
+        .goog-te-gadget { font-family: -apple-system, sans-serif !important; }
+        .goog-te-gadget-simple { border: 1px solid #ddd !important; padding: 5px 8px !important; border-radius: 6px !important; background: #f9f9f9 !important; }
+        /* --- END OF TRANSLATOR STYLES --- */
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to File Organizer v1.0.2</h1>	
+    
+    <p>This guide will help you turn a messy folder into a clean, organized collection. You can open this guide any time from the app's <strong>Help → Open Guide</strong> menu.</p>
+
+    <h2>Quick Start</h2>
+    <ol>
+        <li>Click <strong>Pick Source</strong> to select the messy folder you want to clean up.</li>
+        <li>(Optional) Click <strong>Pick Destination</strong> to choose a *different* folder to put the organized files. If you leave this blank, a new <code>_Organized</code> folder will be created inside your Source folder.</li>
+        <li>Choose your <strong>Action</strong> and <strong>Conflict policy</strong> (see details below).</li>
+        <li>Click <strong>Preview</strong> to see a summary of what will be moved or copied.</li>
+        <li>If everything looks good, click <strong>Start</strong> to begin the operation.</li>
+    </ol>
+
+    <h2>Free vs. Pro Version</h2>
+    <p>By default, File Organizer runs in <strong>Free Mode</strong>. This mode is perfect for safe, simple sorting. The <strong>Pro Version</strong> unlocks advanced features for power-users.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Free Version</th>
+                <th>Pro Version <span class="pro-feature">PRO</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Preview Operation</strong></td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+            </tr>
+            <tr>
+                <td><strong>Action: Copy</strong> (Safe)</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+            </tr>
+            <tr>
+                <td><strong>Conflict: Skip</strong> (Safe)</td>
+                <td>✅ Yes</td>
+                <td>✅ Yes</td>
+            </tr>
+            <tr>
+                <td><strong>Action: Move & Merge</strong></td>
+                <td>❌ No</td>
+                <td>✅ Unlocked</td>
+            </tr>
+            <tr>
+                <td><strong>Conflict: Rename & Overwrite</strong></td>
+                <td>❌ No</td>
+                <td>✅ Unlocked</td>
+            </tr>
+            <tr>
+                <td><strong>Recursive Scan</strong> (Subfolders)</td>
+                <td>❌ No</td>
+                <td>✅ Unlocked</td>
+            </tr>
+            <tr>
+                <td><strong>Filter by Extensions</strong></td>
+                <td>❌ No</td>
+                <td>✅ Unlocked</td>
+            </tr>
+            <tr>
+                <td><strong>Custom Folder Name</strong></td>
+                <td>❌ No</td>
+                <td>✅ Unlocked</td>
+            </tr>
+            <tr>
+                <td><strong>Undo Last Move</strong></td>
+                <td>❌ No</td>
+                <td>✅ Unlocked</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>How to Upgrade to Pro</h2>
+    <p>You can unlock the Pro features with a lifetime license key tied to your machine.</p>
+    <ol>
+        <li>In the app, go to the <strong>File</strong> menu and click <strong>Upgrade to Pro...</strong></li>
+        <li>A dialog will appear showing your unique <strong>Machine ID</strong> (e.g., <code>ABCD-1234</code>).</li>
+        <li>Send this Machine ID to the developer to purchase your license.</li>
+        <li>You will receive a <strong>License Key</strong> back.</li>
+        <li>Paste your License Key into the same dialog and click "OK".</li>
+    </ol>
+    <p>Pro features will unlock instantly. The license is for this machine and will not be affected if you reinstall the app. <strong>However, it will no longer be valid if you reinstall your operating system (like Windows)</strong>.</p>
+
+    <h2>Features Explained</h2>
+    
+    <h3>Actions</h3>
+    <ul>
+        <li><strong>Copy (Free):</strong> Copies files from the Source to the Destination. The original files are left untouched and safe.</li>
+        <li><strong>Move <span class="pro-feature">PRO</span>:</strong> Moves files from the Source to the Destination. The original files are <strong>deleted</strong>. This is the best way to clean a folder.</li>
+        <li><strong>Merge <span class="pro-feature">PRO</span>:</strong> Behaves like "Copy". It's designed to copy files from multiple messy folders into one, single <code>_Organized</code> destination.</li>
+    </ul>
+
+    <h3>Conflict Policies</h3>
+    <p>This tells the app what to do if a file with the <strong>same name</strong> already exists in the destination (e.g., <code>image.jpg</code> already exists).</p>
+    <ul>
+        <li><strong>Skip (Free):</strong> This is the safest option. It will **not** move or copy the new file, leaving the original in place.</li>
+        <li><strong>Rename <span class="pro-feature">PRO</span>:</strong> This is the default Pro policy. It will move the new file and rename it (e.g., <code>image (1).jpg</code>) so both files are kept.</li>
+        <li><strong>Overwrite <span class="pro-feature">PRO</span>:</strong> This is a <strong>destructive</strong> option. It will delete the old file and replace it with the new one. Use with caution!</li>
+    </ul>
+
+    <h3>Filtering <span class="pro-feature">PRO</span></h3>
+    <p>This allows you to organize only specific file types (e.g., only <code>.jpg</code> and <code>.png</code> files).</p>
+    <div class="callout">
+        <strong>How Filtering Works:</strong>
+        <ul>
+            <li>If you <strong>leave "Custom output folder name" blank</strong>, files will be sorted by their extension (e.g., <code>_Organized/png/</code>, <code>_Organized/jpg/</code>).</li>
+            <li>If you <strong>enter a "Custom output folder name"</strong> (e.g., "My Holiday Pics"), all filtered files will be put into that one folder (e.g., <code>_Organized/My Holiday Pics/</code>).</li>
+        </ul>
+    </div>
+
+    <h3>Undo Last Move <span class="pro-feature">PRO</span></h3>
+    <p>The "Undo" button will only become active after you perform a <strong>Move</strong> operation. It uses the session log to find all the files you just moved and attempts to restore them to their original locations.</p>
+    <ul>
+        <li>Undo only works for the <strong>most recent</strong> session.</li>
+        <li>Undo does **not** work for "Copy" or "Merge" (since no originals were deleted).</li>
+    </ul>
+
+    <h2>FAQ & Troubleshooting</h2>
+    
+    <h4>Where did my files go?</h4>
+    <p>Your files are safe! By default, the app creates a single, clean folder named <strong><code>_Organized</code></strong> either in your Destination folder (if you chose one) or inside your Source folder (if you didn't). All your sorted categories (Images, Documents, etc.) will be inside that <code>_Organized</code> folder.</p>
+
+    <h4>Where are the settings and logs?</h4>
+    <ul>
+        <li><strong>Settings:</strong> Your app settings (like your last-used folders) are saved in your Windows user profile. The path is: <code>C:\Users\YourName\AppData\Roaming\FileOrganizer\settings.json</code></li>
+        <li><strong>Logs:</strong> A detailed log of every operation (move, copy, error) is saved inside your <code>_Organized</code> folder, in a subfolder named <code>.logs/</code>.</li>
+    </ul>
+
+    <h4>My License Key doesn't work!</h4>
+    <p>Please double-check that the key you entered is an exact match for the one you received. Also, keys are tied to the <strong>Machine ID</strong>. If you are trying to use a key on a different computer, it will not work.</p>
+
+    <footer style="margin-top: 24px; font-size: 0.9rem; color: #888; border-top: 1px solid #eee; padding-top: 16px;">
+        File Organizer
+    </footer>
+
+</body>
+
+</html>
+
